@@ -137,8 +137,6 @@ Amazon Bedrock::
 --
 You need to enter three values:
 
-[.table-scroll]
---
 [cols=3*, options="header"]
 |===
 |Field |Example value |Description
@@ -155,7 +153,6 @@ You need to enter three values:
 |`us.anthropic.claude-sonnet-4-20250514-v1:0`
 |The Anthropic Claude inference profile ID, including the region prefix.
 |===
---
 
 The model ID must include a region prefix, for example `us.`, `eu.`, or `ap.`. The correct format is:
 
