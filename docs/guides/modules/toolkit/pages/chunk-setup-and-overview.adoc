@@ -99,22 +99,22 @@ The following fix buttons are available:
 |===
 |Button |Where it appears
 
-|**Fix error**
+|**Fix error (Beta)**
 |Next to the **Explain this error** option in the step output section of a failed job.
 
-|**Fix step**
+|**Fix step (Beta)**
 |On hover, next to a failed step in the job view.
 
-|**Fix job**
+|**Fix job (Beta)**
 |In the job header when a job has at least one failed step.
 
-|**Fix workflow**
+|**Fix workflow (Beta)**
 |In the workflow header when a workflow has at least one failed job.
 |===
 
 Each button pre-fills Chunk with the relevant failure context for that level.
-For example, **Fix job** includes all failed steps and their error logs.
-**Fix workflow** includes the workflow ID, the list of failed jobs, and the execution sequence.
+For example, **Fix job (Beta)** includes all failed steps and their error logs.
+**Fix workflow (Beta)** includes the workflow ID, the list of failed jobs, and the execution sequence.
 
 === Set up Chunk from a fix button
 
@@ -129,7 +129,7 @@ The setup flow works as follows:
 . The Chunk intro modal appears.
   Select **Get Started**.
 . If you are an organization admin, follow the on-screen steps to install the CircleCI GitHub App and enter your AI model provider API key.
-  See xref:guides:toolkit:chunk-setup-and-overview.adoc#set-up-chunk[Set Up Chunk] for details on prerequisites and API key requirements.
+  See xref:guides:toolkit:chunk-setup-and-overview.adoc#set-up-chunk[Set up Chunk] for details on prerequisites and API key requirements.
 . Select **Next** to complete setup.
   The Chunk task drawer opens with the failure context from the button you clicked.
 
