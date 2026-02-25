@@ -79,6 +79,69 @@ If you need to tear down Chunk for your organization, you can do so by deleting 
 . Locate your AI model provider API key environment variable and select it using the radio button.
 . Select btn:[Delete] to delete the environment variable. You will be prompted to confirm the deletion.
 
+== Fix failed builds with Chunk
+
+Chunk provides contextual fix buttons directly in the CircleCI web app.
+These buttons appear when a build, job, workflow, or step fails.
+Clicking a button opens Chunk with the failure context already filled in.
+
+You do not need to navigate to Chunk manually or describe the failure yourself.
+Chunk reads the failure details and starts working on a fix.
+
+NOTE: **GitHub only.** These buttons are available for GitHub App organizations and standalone organizations using GitHub as their VCS. They are not available for Bitbucket or GitLab organizations.
+
+=== Fix buttons overview
+
+The following fix buttons are available:
+
+.Chunk fix buttons
+[cols="1,2"]
+|===
+|Button |Where it appears
+
+|**Fix error**
+|Next to the **Explain this error** option in the step output section of a failed job.
+
+|**Fix step**
+|On hover, next to a failed step in the job view.
+
+|**Fix job**
+|In the job header when a job has at least one failed step.
+
+|**Fix workflow**
+|In the workflow header when a workflow has at least one failed job.
+|===
+
+Each button pre-fills Chunk with the relevant failure context for that level.
+For example, **Fix job** includes all failed steps and their error logs.
+**Fix workflow** includes the workflow ID, the list of failed jobs, and the execution sequence.
+
+=== Set up Chunk from a fix button
+
+If your organization has not set up Chunk, you can start the setup process directly from any fix button.
+
+When you click a fix button and Chunk is not configured for your organization, the Chunk setup flow starts automatically.
+You do not need to navigate to the Chunk page first.
+
+The setup flow works as follows:
+
+. Click any fix button on a failed build, job, workflow, or step.
+. The Chunk intro modal appears.
+  Select **Get Started**.
+. If you are an organization admin, follow the on-screen steps to install the CircleCI GitHub App and enter your AI model provider API key.
+  See xref:guides:toolkit:chunk-setup-and-overview.adoc#set-up-chunk[Set Up Chunk] for details on prerequisites and API key requirements.
+. Select **Next** to complete setup.
+  The Chunk task drawer opens with the failure context from the button you clicked.
+
+If you are not an organization admin, the following happens instead:
+
+. Select **Notify my admin** in the modal.
+  An email is sent to all organization admins requesting Chunk access.
+. A confirmation message appears to confirm the notification was sent.
+  Your admin will need to complete the setup before you can use Chunk.
+
+NOTE: **After setup is complete**, clicking any fix button opens the Chunk task drawer directly, with failure context pre-filled.
+
 == Chunk environment setup
 
 To improve verification success, create an "agent environment" CircleCI YAML file. Copy the environment setup sections from your existing CircleCI configuration file into a dedicated file for Chunk.
