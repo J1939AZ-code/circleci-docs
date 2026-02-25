@@ -102,26 +102,31 @@ The following fix buttons are available:
 |**Fix error (Beta)**
 |In the step output header on the job page, next to **Explain error**.
 
+.Fix error (Beta) button in step output
 image::guides:ROOT:chunk/fix-error-job-page.png[Fix error (Beta) button in step output]
 
 |**Fix job (Beta)**
 |In the job header on the job page.
 
+.Fix job (Beta) button in the job header
 image::guides:ROOT:chunk/fix-job-job-page.png[Fix job (Beta) button in the job header]
 
 |**Fix job (Beta)**
 |On hover, next to a failed job in the pipeline list.
 
+.Fix job (Beta) button in the pipeline list
 image::guides:ROOT:chunk/fix-job-pipeline-page.png[Fix job (Beta) button on hover in the pipeline list]
 
 |**Fix workflow (Beta)**
 |On hover on a failed pipeline row in the pipeline list, to the left of `...`.
 
+.Fix workflow (Beta) button in the pipeline list
 image::guides:ROOT:chunk/fix-workflow-pipeline-page.png[Fix workflow (Beta) button on the pipeline list]
 
 |**Fix workflow (Beta)**
 |In the workflow header on the workflow page.
 
+.Fix workflow (Beta) button in the workflow header
 image::guides:ROOT:chunk/fix-workflow-workflow-page.png[Fix workflow (Beta) button in the workflow header]
 |===
 
