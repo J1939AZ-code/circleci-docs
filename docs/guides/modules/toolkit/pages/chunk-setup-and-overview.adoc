@@ -40,7 +40,7 @@ Ensure you have the following prerequisites in place before you get started:
 * An API key from either link:https://console.anthropic.com/settings/keys[Anthropic, window=_blank] or link:https://auth.openai.com/log-in[OpenAI, window=_blank] for Chunk to process and generate fixes. Your source code is not stored nor used for training purposes by CircleCI. If you are using OpenAI you should also check the following:
 ** Make sure your organization link:https://help.openai.com/en/articles/10910291-api-organization-verification#h_c6efff0719[has gpt-5 model access, window=_blank].
 ** Verify your organization. For guidance see the link:https://help.openai.com/en/articles/10910291-api-organization-verification[OpenAI help, window=_blank]. If you cannot get your OpenAI organization verified, see the troubleshooting item <<i-cannot-get-my-openai-organization-verified>>.
-* Ensure you have the CircleCI GitHub App installed in your GitHub organization. Check menu:Organization Settings[VCS Connections]. Chunk needs the GitHub App installed to be able to recommend fixes and open pull requests.
+* Ensure you have the CircleCI GitHub App installed in your organization. Check menu:Organization Settings[VCS Connections]. Chunk needs the GitHub App installed to be able to recommend fixes and open pull requests.
 * Allow Chunk tasks for your organization: Navigate to menu:Organization Settings[Advanced] and select to toggle on the *Allow Chunk tasks* option.
 
 === Setup
@@ -123,7 +123,7 @@ If your organization has not set up Chunk, you can start the setup process direc
 When you click a fix button and Chunk is not configured for your organization, the Chunk setup flow starts automatically.
 You do not need to navigate to the Chunk page first.
 
-. Click any fix button on a failed build, job, workflow, or step.
+. Select any fix button on a failed build, job, workflow, or step.
 . The Chunk intro modal appears.
   Select **Get Started**.
 . Follow the on-screen steps to install the CircleCI GitHub App and enter your AI model provider API key.
